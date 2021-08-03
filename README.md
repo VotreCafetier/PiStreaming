@@ -16,3 +16,6 @@ This is a simple Django Project.
 - Modify resolution, framerate...
 - Debug mode
 - Media browser
+
+- eventually, could be cool adding a interpoller.
+ So it streams at 30 but translate to 60

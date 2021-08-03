@@ -20,6 +20,6 @@ def live(request):
 @gzip.gzip_page
 def live_pi(request): 
     try:
-        return StreamingHttpResponse(get_picam(VideoCamera()),content_type="multipart/x-mixed-replace;boundary=frame")
+        return StreamingHttpResponse(get_picam(PiCameraStreaming()),content_type="multipart/x-mixed-replace;boundary=frame")
     except HttpResponseServerError as e:
         print("aborted :: "+e)

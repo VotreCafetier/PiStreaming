@@ -3,6 +3,7 @@
 ## Requirement
 - OpenCV
 - Django (django-admin)
+- PiCamera
 
 ## ReadMe
 This is a simple Django Project. 

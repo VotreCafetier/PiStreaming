@@ -19,3 +19,4 @@ This is a simple Django Project.
 
 - eventually, could be cool adding a interpoller.
  So it streams at 30 but translate to 60
+ - add a condition if picamera doesnt exist ignore

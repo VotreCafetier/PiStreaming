@@ -19,7 +19,10 @@ def live(request):
 
 @gzip.gzip_page
 def live_pi(request): 
+    """
     try:
         return StreamingHttpResponse(get_picam(PiCameraStreaming()),content_type="multipart/x-mixed-replace;boundary=frame")
     except Exception as e:
         print("aborted :: "+e)
+    """
+    pass

@@ -6,8 +6,7 @@
 - PiCamera
 
 ## ReadMe
-This is a simple Django Project. 
-- Simple login custom
+This is a simple Django Project.
 - Livestreaming from camera Pi
 - Record function
 - Save last 30s, 1m, 5m...

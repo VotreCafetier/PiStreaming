@@ -1,4 +1,4 @@
-import picamera
+# import picamera
 import numpy as np
 import cv2
 

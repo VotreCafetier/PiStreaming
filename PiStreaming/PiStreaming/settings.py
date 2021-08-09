@@ -23,15 +23,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-xp_pri&pw77q6(=b_^582wg7jf%gb*xj7^si*tny=uvbt0o!k+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.0.234','localhost','0.0.0.0','127.0.0.1']
 
+if DEBUG is True:
+    INSTALLED_APPS.append('django.contrib.admin')
 
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -124,3 +125,6 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_REDIRECT_URL = "index"
+LOGOUT_REDIRECT_URL = "login"
